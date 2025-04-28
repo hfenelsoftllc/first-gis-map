@@ -1,0 +1,29 @@
+{
+  "name": "first-gis-map",
+  "version": "1.0.0",
+  "description": "display a geographic map in web page.",
+  "keywords": [
+    "map",
+    "gis",
+    "arcgis",
+    "js",
+    "html",
+    "css",
+    "cdn"
+  ],
+  "homepage": "https://github.com/hfenelsoftllc/first-gis-map#readme",
+  "bugs": {
+    "url": "https://github.com/hfenelsoftllc/first-gis-map/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfenelsoftllc/first-gis-map.git"
+  },
+  "license": "MIT",
+  "author": "hfenelsoftllc",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

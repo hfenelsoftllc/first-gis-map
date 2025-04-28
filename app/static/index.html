@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ArcGIS First Map</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!-- Load Calcite component from CDN-->
+         <script type="module" src="https://js.arcgis.com/calcite-components/3.0.3/dist/calcite/calcite.esm.js"></script>
+
+         <!--Load ArcGIS Maps SDK for JavaScript from CDN -->
+         <link rel="stylesheet" href="https://js.arcgis.com/4.32/esri/themes/light/main.css">
+         <script src="https://js.arcgis.com/4.32/"></script>
+
+         <!--Load Map componennts from CDN-->
+         <script type="module" src="https://js.arcgis.com/map-components/4.32/arcgis-map-components.esm.js"></script>
+    </head>
+    <body>
+        <arcgis-map item-id="237b9584339446a0b56317b5962a4971">
+            <arcgis-zoom position="top-left"></arcgis-zoom>
+            <arcgis-legend position="bottom-left"></arcgis-legend>
+            <arcgis-basemap-toggle position="bottom-right"></arcgis-basemap-toggle>
+        </arcgis-map>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
