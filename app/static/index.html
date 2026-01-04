@@ -12,16 +12,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <!-- Load Calcite component from CDN-->
-         <script type="module" src="https://js.arcgis.com/calcite-components/3.0.3/dist/calcite/calcite.esm.js"></script>
+         <script type="module" src="https://js.arcgis.com/calcite-components/3.3.3/dist/calcite/calcite.esm.js"></script>
+         <!-- <script type="module" src="https://js.arcgis.com/4.34/"></script> -->
 
          <!--Load ArcGIS Maps SDK for JavaScript from CDN -->
-         <link rel="stylesheet" href="https://js.arcgis.com/4.32/esri/themes/light/main.css">
-         <script src="https://js.arcgis.com/4.32/"></script>
+         <link rel="stylesheet" href="https://js.arcgis.com/4.34/esri/themes/light/main.css">
+         <script src="https://js.arcgis.com/4.34/"></script>
 
          <!--Load Map componennts from CDN-->
-         <script type="module" src="https://js.arcgis.com/map-components/4.32/arcgis-map-components.esm.js"></script>
+         <script type="module" src="https://js.arcgis.com/4.34/map-components"></script>
     </head>
     <body>
+        <script type="module" src="./main.js" async defer>
+            const Graphic = await $arcgis.import("@arcgis/core/Graphic.js");
+            const viewElement = document.querySelector("arcgis-map");
+            //wait for the map and view to load
+            await viewElement.when();
+
+           
+            //add the graphic to the map's graphics layer
+            viewElement.view.graphics.add(pointGraphic);
+        </script>
         <arcgis-map item-id="c1ed0753d9be4492a6d4c167febf2163">
             <arcgis-zoom position="top-left"></arcgis-zoom>
             <arcgis-legend position="bottom-left"></arcgis-legend>
@@ -31,6 +42,6 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="" async defer></script>
+        <!-- <script type="module" async defer></script> -->
     </body>
 </html>
